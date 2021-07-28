@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        >
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/edit_Text"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_columnSpan="3"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:gravity="center"
+
+
+            >
+
+        </TextView>
+
+        <ImageButton
+            android:background="@color/black"
+            android:id="@+id/btnDel"
+            android:layout_toRightOf="@id/edit_Text"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/del"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            >
+        </ImageButton>
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4">
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/one"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/two"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/three"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn4"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/four"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/five"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn6"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/six"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn7"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/seven"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn8"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/eight"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn9"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nine"></ImageButton>
+        <ImageButton
+            android:id="@+id/btnStar"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"></ImageButton>
+        <ImageButton
+            android:id="@+id/btn0"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zero"></ImageButton>
+        <ImageButton
+            android:id="@+id/btnJing"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jh"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnCall"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_columnSpan="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call"></ImageButton>
+
+    </GridLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="制作人：大虾蘸酱(Mr.Lang)"
+        android:textColor="@color/black"
+        ></TextView>
+</LinearLayout>
