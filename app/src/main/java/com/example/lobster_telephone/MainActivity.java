@@ -19,6 +19,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         this.getWindow().setBackgroundDrawableResource(R.drawable.background);
+        AlertDialog.Builder alter = new AlertDialog.Builder(this);
+        alter.setTitle("重要提示：");
+        alter.setMessage("第一次打开本APP时，在设置中，给本APP通话权限方可正常使用！");
+        alter.setCancelable(false);
+        alter.setPositiveButton("收到", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                  // nothing will be put here
+            }
+        });
+        alter.show();
         btn0 = (ImageButton) findViewById(R.id.btn0);
         btn0.setOnClickListener(this);
         btn1 = (ImageButton) findViewById(R.id.btn1);
@@ -125,7 +136,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this,"正为您跳转到拨号页面",Toast.LENGTH_SHORT).show();
                 String phoneNum = textView.getText().toString();
                 textView.setText("");
-                Intent intent = new Intent(Intent.ACTION_DIAL);
+                Intent intent = new Intent(Intent.ACTION_CALL);
                 Uri.parse("tel:" + phoneNum);
                 intent.setData(Uri.parse("tel:" + phoneNum));
                 startActivity(intent);
